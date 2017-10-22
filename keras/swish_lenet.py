@@ -16,7 +16,7 @@ def swish(x):
 np.random.seed(1234)
 
 '''
-Generate Model
+Generate Data
 '''
 mnist = datasets.fetch_mldata('MNIST original', data_home='.')
 
@@ -39,7 +39,7 @@ X_train, X_validation, Y_train, Y_validation = \
     train_test_split(X_train, Y_train, test_size=N_validation)
 
 '''
-Configure Model
+Build Model
 '''
 n_in = len(X[0])  # 784
 n_out = len(Y[0])  # 10
